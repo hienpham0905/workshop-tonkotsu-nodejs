@@ -40,8 +40,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1   
            
-      - name: Upload
-        uses: actions/upload-artifact@master
+      - name: Publish to Registry
+        uses: HurricanKai/Publish-Docker-Github-Action@master
+        with:
+          name: myDocker/repository
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
 
       - name: Download built artifact
