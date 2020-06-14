@@ -41,3 +41,4 @@ npm start
 Follow the coach instructions and good luck!
 
 Test Hello World
+Test Challenge#2
